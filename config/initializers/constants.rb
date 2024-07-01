@@ -1,0 +1,22 @@
+LOCATIONS = [
+    { city_name: 'Mumbai', country_code: 'IN' },
+    { city_name: 'Delhi', country_code: 'IN' },
+    { city_name: 'Bangalore', country_code: 'IN' },
+    { city_name: 'Hyderabad', country_code: 'IN' },
+    { city_name: 'Ahmedabad', country_code: 'IN' },
+    { city_name: 'Chennai', country_code: 'IN' },
+    { city_name: 'Kolkata', country_code: 'IN' },
+    { city_name: 'Pune', country_code: 'IN'},
+    { city_name: 'Jaipur', country_code: 'IN' },
+    { city_name: 'Surat', country_code: 'IN' },
+    { city_name: 'Lucknow', country_code: 'IN' },
+    { city_name: 'Kanpur', country_code: 'IN' },
+    { city_name: 'Nagpur', country_code: 'IN' },
+    { city_name: 'Patna', country_code: 'IN' },
+    { city_name: 'Indore', country_code: 'IN' },
+    { city_name: 'Thane', country_code: 'IN' },
+    { city_name: 'Bhopal', country_code: 'IN' },
+    { city_name: 'Visakhapatnam', country_code: 'IN' },
+    { city_name: 'Vadodara', country_code: 'IN' },
+    { city_name: 'Nashik', country_code: 'IN' }
+  ]
