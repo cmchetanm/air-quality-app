@@ -1,0 +1,9 @@
+air_quality_worker_job:
+  cron: "*/30 * * * * *"  # Runs every 30 seconds 
+  class: "AirQualityWorker"
+  queue: default
+
+air_pollution_history_worker_job:
+  cron: "0 0 1 * *"   # Runs every 1 month
+  class: "AirPollutionHistoryWorker"
+  queue: default
