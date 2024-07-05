@@ -1,0 +1,312 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/air_pollution?appid=f51abe7e542e3f9235429da354f46545&lat=19.076&lon=72.8777
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openweathermap.org
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 04 Jul 2024 08:22:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '189'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/air_pollution?lat=19.08&lon=72.88"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":72.8777,"lat":19.076},"list":[{"main":{"aqi":2},"components":{"co":357.15,"no":1.15,"no2":13.02,"o3":22.53,"so2":15.14,"pm2_5":11.02,"pm10":18,"nh3":2.95},"dt":1720080889}]}'
+  recorded_at: Thu, 04 Jul 2024 08:22:04 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/direct?appid=f51abe7e542e3f9235429da354f46545&limit=5&q=london,GB
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openweathermap.org
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 04 Jul 2024 10:03:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4293'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/direct?limit=5&q=london%2cgb"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6IkxvbmRvbiIsImxvY2FsX25hbWVzIjp7ImN1Ijoi0JvQvtC90LTQvtC90YoiLCJtbCI6IuC0suC0o+C1jeC0n+C1uyIsImVvIjoiTG9uZG9ubyIsImphIjoi44Ot44Oz44OJ44OzIiwid2EiOiJMb25kZSIsIm9zIjoi0JvQvtC90LTQvtC9IiwiaWUiOiJMb25kb24iLCJsbiI6IkzDs25kyZtsyZsiLCJuYSI6IkxvbmRvbiIsImt5Ijoi0JvQvtC90LTQvtC9IiwibXIiOiLgpLLgpILgpKHgpKgiLCJoeSI6ItS81bjVttWk1bjVtiIsImNvIjoiTG9uZHJhIiwicm0iOiJMb25kcmEiLCJrdyI6IkxvdW5kcmVzIiwic24iOiJMb25kb24iLCJ0ciI6IkxvbmRyYSIsInNrIjoiTG9uZMO9biIsImJnIjoi0JvQvtC90LTQvtC9IiwiYW0iOiLhiIjhipXhi7DhipUiLCJhbiI6IkxvbmRyZXMiLCJsbyI6IuC6peC6reC6meC6lOC6reC6mSIsImFmIjoiTG9uZGVuIiwiYXYiOiLQm9C+0L3QtNC+0L0iLCJlbCI6Is6bzr/Ovc60zq/Ovc6/IiwiZXMiOiJMb25kcmVzIiwiYmEiOiLQm9C+0L3QtNC+0L0iLCJ0ZyI6ItCb0L7QvdC00L7QvSIsImhhIjoiTGFuZGFuIiwiaHQiOiJMb25uIiwicGwiOiJMb25keW4iLCJydSI6ItCb0L7QvdC00L7QvSIsInNxIjoiTG9uZHJhIiwidGsiOiJMb25kb24iLCJtbiI6ItCb0L7QvdC00L7QvSIsImd1Ijoi4Kqy4KqC4Kqh4KqoIiwiZGUiOiJMb25kb24iLCJlZSI6IkxvbmRvbiIsInJvIjoiTG9uZHJhIiwibGkiOiJMb25kZSIsInZvIjoiTG9uZG9uIiwieWkiOiLXnNeQ16DXk9eQ158iLCJibSI6IkxvbmRvbiIsImh1IjoiTG9uZG9uIiwicXUiOiJMb25kb24iLCJwYSI6IuCosuCpsOCooeCoqCIsImV0IjoiTG9uZG9uIiwiZm8iOiJMb25kb24iLCJ0dyI6IkxvbmRvbiIsImVuIjoiTG9uZG9uIiwiZ2wiOiJMb25kcmVzIiwia2EiOiLhg5rhg53hg5zhg5Phg53hg5zhg5giLCJzdiI6IkxvbmRvbiIsImlvIjoiTG9uZG9uIiwiaGkiOiLgpLLgpILgpKbgpKgiLCJzbSI6IkxvbmV0b25hIiwiYmgiOiLgpLLgpILgpKbgpKgiLCJibyI6IuC9o+C9vOC9k+C8i+C9iuC9vOC9k+C8jSIsIm5lIjoi4KSy4KSo4KWN4KSh4KSoIiwiYXNjaWkiOiJMb25kb24iLCJzciI6ItCb0L7QvdC00L7QvSIsImJzIjoiTG9uZG9uIiwiYXoiOiJMb25kb24iLCJmZiI6IkxvbmRvbiIsImxiIjoiTG9uZG9uIiwidWciOiLZhNmI2YbYr9uH2YYiLCJ0ZSI6IuCwsuCwguCwoeCwqOCxjSIsInN1IjoiTG9uZG9uIiwibWkiOiJSxIFuYW5hIiwid28iOiJMb25kYXIiLCJsdCI6IkxvbmRvbmFzIiwiZ24iOiJMw7NuZHlyZSIsInNjIjoiTG9uZHJhIiwiYnIiOiJMb25kcmV6IiwidGwiOiJMb25kcmVzIiwic3ciOiJMb25kb24iLCJteSI6IuGAnOGAlOGAuuGAkuGAlOGAuuGAmeGAvOGAreGAr+GAtyIsIm10IjoiTG9uZHJhIiwiYXIiOiLZhNmG2K/ZhiIsImdhIjoiTG9uZGFpbiIsImtsIjoiTG9uZG9uIiwiaGUiOiLXnNeV16DXk9eV158iLCJubiI6IkxvbmRvbiIsIml0IjoiTG9uZHJhIiwiYmUiOiLQm9C+0L3QtNCw0L0iLCJtcyI6IkxvbmRvbiIsImd2IjoiTHVubmluIiwiaWQiOiJMb25kb24iLCJldSI6IkxvbmRyZXMiLCJmZWF0dXJlX25hbWUiOiJMb25kb24iLCJ2aSI6Ikx1w6JuIMSQw7RuIiwianYiOiJMb25kb24iLCJrayI6ItCb0L7QvdC00L7QvSIsImZ5IjoiTG9uZGVuIiwiY2EiOiJMb25kcmVzIiwiY3YiOiLQm9C+0L3QtNC+0L0iLCJrdSI6IkxvbmRvbiIsInVrIjoi0JvQvtC90LTQvtC9Iiwic2wiOiJMb25kb24iLCJrdiI6ItCb0L7QvdC00L7QvSIsInN0IjoiTG9uZG9uIiwidXoiOiJMb25kb24iLCJ0dCI6ItCb0L7QvdC00L7QvSIsInB0IjoiTG9uZHJlcyIsImdkIjoiTHVubmFpbm4iLCJ5byI6Ikzhu41uZOG7jW51IiwiZnIiOiJMb25kcmVzIiwiYm4iOiLgprLgpqjgp43gpqHgpqgiLCJpZyI6IkxvbmRvbiIsIm9jIjoiTG9uZHJlcyIsInNkIjoi2YTZhtqK2YYiLCJzaCI6IkxvbmRvbiIsInNlIjoiTG9uZG9uIiwia20iOiLhnqHhnrvhnoThnorhn40iLCJwcyI6ItmE2YbYr9mGIiwiaWEiOiJMb25kb24iLCJzYSI6IuCksuCkqOCljeCkoeCkqOCljSIsInNvIjoiTG9uZG9uIiwiY3MiOiJMb25kw71uIiwiY2UiOiLQm9C+0L3QtNC+0L0iLCJ0byI6Ikxvbml0b25pIiwidXIiOiLYudmE2KfZgtuBINmE2YbYr9mGIiwiaXMiOiJMb25kb24iLCJtayI6ItCb0L7QvdC00L7QvSIsIm55IjoiTG9uZG9uIiwia24iOiLgsrLgsoLgsqHgsqjgs40iLCJ6aCI6IuS8puaVpiIsImF5IjoiTG9uZG9uIiwiaHIiOiJMb25kb24iLCJ0aCI6IuC4peC4reC4meC4lOC4reC4mSIsIm52IjoiVG9vaCBEaW5lyrzDqSBCaWtpbiBIYWFsyrzDoSIsIm9tIjoiTGFuZGFuIiwidGEiOiLgrofgrrLgrqPgr43grp/grqngr40iLCJrbyI6IuufsOuNmCIsImJpIjoiTG9uZG9uIiwib3IiOiLgrLLgrKPgrY3grKHgrKgiLCJjeSI6IkxsdW5kYWluIiwibmwiOiJMb25kZW4iLCJzaSI6IuC2veC2seC3iuC2qeC2seC3iiIsImRhIjoiTG9uZG9uIiwibm8iOiJMb25kb24iLCJtZyI6IkzDtG5kw7RuYSIsImx2IjoiTG9uZG9uYSIsImZqIjoiTG9kb25pIiwiZmkiOiJMb250b28iLCJhYiI6ItCb0L7QvdC00L7QvSIsInp1IjoiSUxvbmRvbiIsImZhIjoi2YTZhtiv2YYifSwibGF0Ijo1MS41MDczMjE5LCJsb24iOi0wLjEyNzY0NzQsImNvdW50cnkiOiJHQiIsInN0YXRlIjoiRW5nbGFuZCJ9LHsibmFtZSI6IkNpdHkgb2YgTG9uZG9uIiwibG9jYWxfbmFtZXMiOnsiZXMiOiJDaXR5IGRlIExvbmRyZXMiLCJmciI6IkNpdMOpIGRlIExvbmRyZXMiLCJ6aCI6IuWAq+aVpuW4giIsInJ1Ijoi0KHQuNGC0LgiLCJwdCI6IkNpZGFkZSBkZSBMb25kcmVzIiwiaGkiOiLgpLjgpL/gpJ/gpYAg4KSR4KSr4KS8IOCksuCkguCkpuCkqCIsImhlIjoi15TXodeZ15jXmSDXqdecINec15XXoNeT15XXnyIsInVyIjoi2YTZhtiv2YYg2LTbgdixIiwibHQiOiJMb25kb25vIFNpdGlzIiwidWsiOiLQm9C+0L3QtNC+0L3RgdGM0LrQtSDQodGW0YLRliIsImtvIjoi7Iuc7YuwIOyYpOu4jCDrn7DrjZgiLCJlbiI6IkNpdHkgb2YgTG9uZG9uIn0sImxhdCI6NTEuNTE1NjE3NywibG9uIjotMC4wOTE5OTgzLCJjb3VudHJ5IjoiR0IiLCJzdGF0ZSI6IkVuZ2xhbmQifSx7Im5hbWUiOiJDaGVsc2VhIiwibG9jYWxfbmFtZXMiOnsiYWYiOiJDaGVsc2VhLCBMb25kZW4iLCJzayI6IkNoZWxzZWEiLCJqYSI6IuODgeOCp+ODq+OCt+ODvCIsImZyIjoiQ2hlbHNlYSIsIml0IjoiQ2hlbHNlYSIsImRlIjoiQ2hlbHNlYSIsImFyIjoi2KrYtNmK2YTYs9mKIiwidWsiOiLQp9C10LvRgdGWIiwiaGkiOiLgpJrgpYfgpLLgpY3gpLjgpYAsIOCksuCkguCkpuCkqCIsImV0IjoiQ2hlbHNlYSIsImtvIjoi7LK87IucIiwiemgiOiLou4rot6/lo6siLCJmYSI6ItqG2YTYs9uMIiwiaHUiOiJDaGVsc2VhIiwibmwiOiJDaGVsc2VhIiwiZ2EiOiJDaGVsc2VhIiwic2giOiJDaGVsc2VhLCBMb25kb24iLCJ2aSI6IkNoZWxzZWEsIEx1w6JuIMSQw7RuIiwiZXUiOiJDaGVsc2VhIiwiZW4iOiJDaGVsc2VhIiwiZWwiOiLOpM+Dzq3Ou8+DzrkiLCJ0ciI6IkNoZWxzZWEsIExvbmRyYSIsImVzIjoiQ2hlbHNlYSIsImlkIjoiQ2hlbHNlYSwgTG9uZG9uIiwiYXoiOiLDh2Vsc2kiLCJkYSI6IkNoZWxzZWEiLCJoZSI6ItemJ9ec16HXmSIsIm5vIjoiQ2hlbHNlYSIsInVyIjoi2obbjNmE2LPbjNiMINmE2YbYr9mGIiwicnUiOiLQp9C10LvRgdC4Iiwic3YiOiJDaGVsc2VhLCBMb25kb24iLCJwbCI6IkNoZWxzZWEiLCJwdCI6IkNoZWxzZWEifSwibGF0Ijo1MS40ODc1MTY3LCJsb24iOi0wLjE2ODcwMDcsImNvdW50cnkiOiJHQiIsInN0YXRlIjoiRW5nbGFuZCJ9LHsibmFtZSI6IlZhdXhoYWxsIiwibG9jYWxfbmFtZXMiOnsidHIiOiJWYXV4aGFsbCwgTG9uZHJhIiwiemgiOiLmsoPlhYvmlq/pnI3niL4iLCJiZyI6ItCS0L7QutGB0YXQvtC7IiwiZXMiOiJWYXV4aGFsbCIsImZhIjoi2YjYp9qp2LPZiNmEIiwiZnIiOiJWYXV4aGFsbCIsImFyIjoi2YHZiNmD2LPZh9mI2YQiLCJubyI6IlZhdXhoYWxsIiwibm4iOiJWYXV4aGFsbCIsImphIjoi44O044Kp44Kv44K944O844OrIiwic3YiOiJWYXV4aGFsbCwgTG9uZG9uIiwiYWYiOiJWYXV4aGFsbCIsImhlIjoi15XXlden16HXlNeV15wiLCJlbiI6IlZhdXhoYWxsIiwiaXQiOiJWYXV4aGFsbCIsInBsIjoiVmF1eGhhbGwiLCJnYSI6IlZhdXhoYWxsIiwiZGUiOiJWYXV4aGFsbCIsInJ1Ijoi0JLQvtC60YHRhdC+0LvQuyIsInVyIjoi2YjZiNqp2LPbgdmI2YTYjCDZhNmG2K/ZhiJ9LCJsYXQiOjUxLjQ4NzQ4MzQsImxvbiI6LTAuMTIyOTI5NywiY291bnRyeSI6IkdCIiwic3RhdGUiOiJFbmdsYW5kIn1d
+  recorded_at: Thu, 04 Jul 2024 10:03:36 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/air_pollution?appid=f51abe7e542e3f9235429da354f46545&lat=51.5073219&lon=-0.1276474
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openweathermap.org
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 04 Jul 2024 10:03:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '187'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/air_pollution?lat=51.51&lon=-0.13"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-0.1276,"lat":51.5072},"list":[{"main":{"aqi":2},"components":{"co":156.88,"no":1.19,"no2":3.09,"o3":65.09,"so2":2.5,"pm2_5":1.3,"pm10":3.34,"nh3":1.12},"dt":1720086880}]}'
+  recorded_at: Thu, 04 Jul 2024 10:03:37 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/direct?appid=f51abe7e542e3f9235429da354f46545&limit=5&q=abc,hj
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openweathermap.org
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 04 Jul 2024 18:42:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/direct?limit=5&q=abc%2chj"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Thu, 04 Jul 2024 18:42:15 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/direct?appid=f51abe7e542e3f9235429da354f46545&limit=5&q=nm,ko
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openweathermap.org
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 04 Jul 2024 18:52:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/direct?limit=5&q=nm%2cko"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Thu, 04 Jul 2024 18:52:22 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/air_pollution?appid=f51abe7e542e3f9235429da354f46545&lat&lon=72.8777
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openweathermap.org
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 04 Jul 2024 18:54:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '44'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/air_pollution?lat=&lon=72.88"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"cod":"400","message":"Nothing to geocode"}'
+  recorded_at: Thu, 04 Jul 2024 18:54:23 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/direct?appid=f51abe7e542e3f9235429da354f46545&limit=5&q=abc,df
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openweathermap.org
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 04 Jul 2024 19:19:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/direct?limit=5&q=abc%2cdf"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Thu, 04 Jul 2024 19:19:06 GMT
+recorded_with: VCR 6.2.0
