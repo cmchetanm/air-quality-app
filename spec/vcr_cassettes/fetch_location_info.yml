@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/direct?appid=f51abe7e542e3f9235429da354f46545&limit=5&q=Mumbai,IN
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openweathermap.org
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 04 Jul 2024 08:22:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '900'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/direct?limit=5&q=mumbai%2cin"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6Ik11bWJhaSIsImxvY2FsX25hbWVzIjp7ImtuIjoi4LKu4LOB4LKC4LKs4LOIIiwiYm4iOiLgpq7gp4Hgpq7gp43gpqzgpociLCJ0YSI6IuCuruCvgeCuruCvjeCuquCviCIsImhpIjoi4KSu4KWB4KSC4KSs4KSIIiwib3IiOiLgrK7grYHgrK7grY3grKzgrL7grIciLCJzayI6IkJvbWJhaiIsImtvIjoi662E67CU7J20IiwiZmEiOiLZhdmI2YXYqNin24wiLCJlbCI6Is6czr/Phc68z4DOrM65IiwiY3MiOiJCb21iYWoiLCJlbiI6Ik11bWJhaSIsImZyIjoiQm9tYmF5IiwidGUiOiLgsK7gsYHgsILgsKzgsYgiLCJlbyI6Ik11bWJham8iLCJzciI6ItCc0YPQvNCx0LDRmCIsInNpIjoi4La44LeU4La44LeK4La24LeP4La64LeSIiwibHQiOiJNdW1iYWp1cyIsImlhIjoiTXVtYmFpIiwiYXIiOiLZhdmI2YXYqNin2YoiLCJ6aCI6IuWtn+S5sCIsIm9jIjoiTXVtYmFpIiwidGgiOiLguKHguLjguKHguYTguJoiLCJndSI6IuCqruCrgeCqguCqrOCqiCIsImlvIjoiTXVtYmFpIiwicHMiOiLZhdmF2KjYp9uMIiwicGwiOiJNdW1iYWoiLCJrYSI6IuGDm+GDo+GDm+GDkeGDkOGDmCIsIm1sIjoi4LSu4LWB4LSC4LSs4LWIIiwiYXoiOiJNdW1iYXkiLCJ1ayI6ItCc0YPQvNCx0LDRlyIsInJ1Ijoi0JzRg9C80LHQsNC4IiwiamEiOiLjg6Djg7Pjg5DjgqQiLCJwYSI6IuCoruCpgeCpsOCorOCoiCIsImVzIjoiQm9tYmF5IiwibXIiOiLgpK7gpYHgpILgpKzgpIgiLCJrcyI6Itio2Y7Zhdio2Y7bkiIsInlpIjoi157Xldee15HXmdeZIiwidXIiOiLZhdmF2KjYptuMIiwiaGUiOiLXnteV157XkdeQ15kiLCJzZCI6ItmF2YXYqNim2YoiLCJkZSI6Ik11bWJhaSJ9LCJsYXQiOjE5LjA3ODU0NTEsImxvbiI6NzIuODc4MTc2LCJjb3VudHJ5IjoiSU4iLCJzdGF0ZSI6Ik1haGFyYXNodHJhIn1d
+  recorded_at: Thu, 04 Jul 2024 08:22:02 GMT
+recorded_with: VCR 6.2.0
